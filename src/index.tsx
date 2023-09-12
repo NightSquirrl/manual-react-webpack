@@ -1,10 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './index.less';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.less";
 
-if (module && module.hot) {
-  module.hot.accept();
+function App() {
+  return (
+    <div className="App">
+      <img className={"App-logo"} src="/logo.png" alt="" />
+    </div>
+  );
 }
 
-ReactDOM.render(<App name="breeze" />, document.querySelector('#root'));
+ReactDOM.render(<App />, document.getElementById("root"));
